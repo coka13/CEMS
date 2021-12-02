@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.teacher.StartExamController">
+   <children>
+      <Label layoutX="215.0" layoutY="176.0" text="Choose which exam to start:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="66.0" text="Start Exam Page:" underline="true">
+         <font>
+            <Font name="Elephant" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_message" alignment="TOP_CENTER" layoutX="211.0" layoutY="310.0" prefHeight="17.0" prefWidth="456.0" text="label message" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="215.0" layoutY="234.0" text="Password to enter the exam:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <JFXComboBox fx:id="choicebox_exams" layoutX="446.0" layoutY="173.0" prefHeight="31.0" prefWidth="218.0" />
+      <JFXTextField fx:id="textfielf_password" layoutX="448.0" layoutY="231.0" prefHeight="31.0" prefWidth="218.0" />
+      <JFXButton fx:id="button_start" buttonType="RAISED" layoutX="375.0" layoutY="371.0" onMouseClicked="#button_start_exam_clicked" prefHeight="49.0" prefWidth="116.0" style="-fx-background-color: #81D657; -fx-background-radius: 10pt;" text="Start exam">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="69.0" fitWidth="67.0" layoutX="195.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Rbac931ff73235129f88569d351d9a942.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="661.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.teacher.CreateNewWordExamController">
+   <children>
+      <Label layoutX="295.0" layoutY="50.0" prefHeight="49.0" prefWidth="234.0" text="Manual Exam Page" underline="true">
+         <font>
+            <Font name="Elephant" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="443.0" text="Duration:" />
+      <Label layoutX="620.0" layoutY="67.0" text="Field:" />
+      <Label fx:id="fieldNameLabel" layoutX="656.0" layoutY="67.0" text="Label" />
+      <Label layoutX="214.0" layoutY="158.0" text="Select course:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="errLabel" layoutX="387.0" layoutY="508.0" text="Label" textFill="RED" />
+      <Text layoutX="330.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H" textAlignment="CENTER" wrappingWidth="47.13672637939453">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="404.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M" textAlignment="CENTER" wrappingWidth="49.34033051133156">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="378.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" textAlignment="CENTER" wrappingWidth="17.00000524520874">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="192.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of the exam:" textAlignment="CENTER" wrappingWidth="152.99999076873064">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="submitBtn" buttonType="RAISED" layoutX="357.0" layoutY="557.0" onMouseClicked="#handleOnAction" prefHeight="49.0" prefWidth="96.0" ripplerFill="BLACK" style="-fx-background-radius: 10pt; -fx-background-color: #81D657;" text="SUBMIT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="uploadExamBtn" buttonType="RAISED" layoutX="412.0" layoutY="321.0" onMouseClicked="#handleOnAction" prefHeight="31.0" prefWidth="136.0" ripplerFill="BLACK" style="-fx-background-radius: 10pt; -fx-background-color: #01C2F0;" text="Choose file">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="nameOfExam" alignment="CENTER" layoutX="403.0" layoutY="219.0" prefHeight="41.0" prefWidth="150.0" />
+      <JFXComboBox fx:id="courses" layoutX="403.0" layoutY="156.0" prefHeight="31.0" prefWidth="150.0" />
+      <JFXComboBox fx:id="hourChoiceBox" layoutX="326.0" layoutY="438.0" />
+      <JFXComboBox fx:id="minutesChoiceBox" layoutX="401.0" layoutY="438.0" />
+      <Label layoutX="192.0" layoutY="326.0" text="Upload exam file:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="69.0" fitWidth="67.0" layoutX="226.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/hand-with-pen-icon-png-50-px-hand-writing-with-pen-png-1600_1600.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

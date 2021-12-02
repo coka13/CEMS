@@ -1,0 +1,122 @@
+.logo{
+	-fx-background-color:transparent;
+	-fx-background-image: url("../img/logo.png");
+	-fx-background-repeat: stretch;   
+	-fx-background-size: 200.0 200.0;
+}
+.bg{
+	-fx-background-image: url("../img/bg.png");
+	-fx-background-color:#F4DCB7;
+	-fx-background-repeat: stretch;   
+	-fx-background-repeat: repeat ;   
+}
+.pages-bg{
+	-fx-background-color:transparent;
+	-fx-background-repeat: stretch;   
+	-fx-background-repeat: repeat ;   
+}
+
+
+.button-naveen-green{
+	-fx-font-size:18pt;
+	-fx-background-radius:10.0pt;
+	-fx-background-color: #81D657;
+	-fx-font-size:18pt;
+	-fx-font-weight:bold;
+	-fx-blend-mode:SRC-OVER;
+	-jfx-button-type:RAISED;
+	
+}
+
+
+
+.button-settings-login{
+	-fx-background-color:transparent;
+	-fx-background-image: url("../img/icon-settings.png");
+	-fx-background-repeat: stretch;   
+	-fx-background-size: 32.0 32.0;
+}
+
+.button-settings-login:hover {
+	-fx-background-color:transparent;
+    -fx-background-image: url("../img/icon-settings.png");
+	-fx-background-repeat: stretch;   
+	-fx-background-size: 32.0 32.0;
+}
+.button-menu{
+	-fx-background-color:transparent;
+	-fx-background-image: url("../img/menu-icon.png");
+	-fx-background-repeat: stretch;   
+	-fx-background-size: 32.0 32.0;
+}
+
+.button-menu:hover {
+	-fx-background-color:transparent;
+    -fx-background-image: url("../img/menu-icon-hover.png");
+	-fx-background-repeat: stretch;   
+	-fx-background-size: 32.0 32.0;
+}
+.button-logout{
+	-fx-background-color:transparent;
+	-fx-background-image: url("../img/icons8-exit-64.png");
+	-fx-background-repeat: stretch;   
+	-fx-background-size: 32.0 32.0;
+}
+
+.button-logout:hover {
+	-fx-background-color:transparent;
+    -fx-background-image: url("../img/icons8-exit-64.png");
+	-fx-background-repeat: stretch;   
+	-fx-background-size: 32.0 32.0;
+}
+.left{
+	-fx-background-color: #4dafdC;
+}
+
+.right{
+	-fx-background-color: #4dafdC;
+}
+
+
+.menu{
+	-fx-background-color: linear-gradient(to top,#76A551, #99D46B);
+}
+.menu:focused{
+	-fx-background-color: transparent;
+}
+.menu-item {
+    -fx-padding: 0.2em 0.2em 0.2em 0.2em;
+    -fx-background: darkgray ;
+}
+
+.menu-item .label {
+    -fx-text-fill: white;
+    -fx-font-size: 18.0 pt;
+    -fx-padding: 0.2em 0.2em 0.2em 0.2em;
+}
+
+.menu-item:focused {
+     -fx-background-color: #CA7CAD;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #7FFF00;
+    -fx-font-weight: bold; 
+    
+}
+
+
+
+
+
+
+
+.context-menu {
+    /*-fx-skin: "javafx.scene.control.skin.ContextMenuSkin";*/
+    -fx-background-color: #7e4669;
+    
+    -fx-background-insets: 0.0, 1.0, 2.0;
+    -fx-background-radius: 0.0 6.0 6.0 6.0, 0.0 5.0 5.0 5.0, 0.0 4.0 4.0 4.0;
+/*    -fx-padding: 0.666667em 0.083333em 0.666667em 0.083333em;  8 1 8 1 */
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; /* 4 1 8 1 */
+}

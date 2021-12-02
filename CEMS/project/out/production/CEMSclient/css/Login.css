@@ -1,0 +1,19 @@
+.button{
+	-fx-background-color:transparent;
+	-fx-background-image: url("../img/statistics.png");
+	-fx-background-repeat: stretch;   
+	-fx-background-size: 80 80;
+	-fx-background-radius: 10;
+	-fx-text-fill: #7FFF00;
+	-fx-font-weight: bold;
+}
+
+.button:hover{
+	-fx-background-color:transparent;
+	-fx-background-image: url("../img/statisticshover.png");
+	-fx-background-repeat: stretch;   
+	-fx-background-size: 80 80;
+	-fx-background-radius: 10;
+	-fx-text-fill: #7e4669;
+	-fx-font-weight: bold;
+}

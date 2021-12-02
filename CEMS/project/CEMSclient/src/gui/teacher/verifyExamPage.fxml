@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleOnAction" prefHeight="640.0" prefWidth="840.0" stylesheets="@../../css/Main_Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.teacher.verifyExamController">
+   <children>
+      <Label layoutX="82.0" layoutY="34.0" prefHeight="53.0" prefWidth="328.0" text="Verify Exams">
+         <font>
+            <Font name="Elephant" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="35.0" layoutY="114.0" prefHeight="442.0" prefWidth="779.0" stylesheets="@../../css/Main_Style.css">
+        <columns>
+          <TableColumn fx:id="colExamID" prefWidth="90.33331298828125" text="Exam ID" />
+          <TableColumn fx:id="colStudentID" prefWidth="116.66668701171875" text="Student ID" />
+            <TableColumn fx:id="colStartTime" prefWidth="90.99996948242188" text="Start Time" />
+            <TableColumn fx:id="colEndTime" prefWidth="115.6666259765625" text="End Time" />
+            <TableColumn fx:id="colGrade" prefWidth="58.0" text="Grade" />
+            <TableColumn fx:id="colGetCopy" prefWidth="83.0" text="Get Copy" />
+            <TableColumn fx:id="colStatus" prefWidth="95.0" text="Status" />
+            <TableColumn fx:id="colCheating" prefWidth="112.0" text="Suspect cheating" />
+        </columns>
+      </TableView>
+      <AnchorPane fx:id="gradeAnchorPane" layoutX="380.0" layoutY="150.0" prefHeight="297.0" prefWidth="422.0">
+         <children>
+            <TextArea fx:id="gradeTextArea" layoutX="-8.0" layoutY="48.0" prefHeight="262.0" prefWidth="430.0" />
+            <Label fx:id="gradeCommentsLbl" layoutY="11.0" prefHeight="31.0" prefWidth="200.0" text="Comments For Student">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorLbl" layoutX="279.0" layoutY="270.0" prefHeight="17.0" prefWidth="141.0" text="You must insert student ID" textFill="#f60303" />
+            <TextField fx:id="studentIDTxt" layoutX="264.0" layoutY="14.0" prefHeight="25.0" prefWidth="72.0" promptText="Student ID" />
+            <TextField fx:id="newGrade" layoutX="336.0" layoutY="14.0" prefHeight="25.0" prefWidth="78.0" promptText="New Grade" />
+            <TextField fx:id="examID" layoutX="192.0" layoutY="14.0" prefHeight="25.0" prefWidth="72.0" promptText="Exam ID" />
+            <JFXButton fx:id="gradeSend" buttonType="RAISED" layoutX="362.0" layoutY="286.0" onMouseClicked="#handleOnAction" prefHeight="17.0" prefWidth="52.0" ripplerFill="BLACK" style="-fx-background-radius: 10pt; -fx-background-color: #81D657;" text="Edit grade">
+               <font>
+                  <Font name="System Bold" size="8.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label fx:id="seccessLbl" layoutX="582.0" layoutY="85.0" prefHeight="17.0" prefWidth="141.0" text="Grade has been submited" textFill="#21f505" />
+      <JFXButton fx:id="editGrade" buttonType="RAISED" layoutX="598.0" layoutY="45.0" onMouseClicked="#handleOnAction" prefHeight="31.0" prefWidth="93.0" ripplerFill="BLACK" style="-fx-background-radius: 10pt; -fx-background-color: #81D657;" text="Edit grade">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="69.0" fitWidth="67.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/validate-interface-searching-icon-png-and-vector-for-free-validate-png-512_511.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

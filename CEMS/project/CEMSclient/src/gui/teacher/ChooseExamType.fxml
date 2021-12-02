@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.teacher.GetExamType">
+   <children>
+      <Label layoutX="249.0" layoutY="72.0" text="Choose Exam Type" underline="true">
+         <font>
+            <Font name="Elephant" size="36.0" />
+         </font></Label>
+      <JFXButton fx:id="wordExamBtn" buttonType="RAISED" layoutX="249.0" layoutY="230.0" onMouseClicked="#handleOnAction" style="-fx-background-color: #81D657; -fx-background-radius: 10pt;" text="Word exam">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="onlineExamBtn" buttonType="RAISED" layoutX="460.0" layoutY="230.0" onMouseClicked="#handleOnAction" style="-fx-background-color: #81D657; -fx-background-radius: 10pt;" text="Online exam">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="69.0" fitWidth="67.0" layoutX="182.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/R71248f33542ec8aa753da3c2b1f368fd.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
