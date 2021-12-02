@@ -1,1 +1,1 @@
-![myimage-alt-tag](url-to-image)(https://imgur.com/a/Wwqvih2)
+![Alt text](https://imgur.com/a/Wwqvih2"Optional title")
